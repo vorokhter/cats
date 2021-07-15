@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="api/catApi.js"></script>
+
+    <title>cats</title>
+</head>
+
+<body>
+    <header>
+        <span class="cats-title">cats</span>
+        <div>
+            <input class="input" type="text" placeholder="введите кол-во" id="catInput">
+            <button class="get-cat-button" type="button" onclick={someCats()}>получить котиков</button>
+        </div>
+    </header>
+
+    <div class="modal" id="modal" onclick={closeModal()}>
+        <div class="modal__content" id="modal__content">
+            <img src="#" class="cat-img full" id="catFullImg" alt="картинка замечательного котика">
+        </div>
+    </div>
+
+    <div class="page" id="page">
+        <div class="columns">
+            <div class="column" id="column/0"></div>
+            <div class="column" id="column/1"></div>
+            <div class="column" id="column/2"></div>
+            <div class="column" id="column/3"></div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
